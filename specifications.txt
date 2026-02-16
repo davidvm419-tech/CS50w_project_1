@@ -1,0 +1,34 @@
+Entry page
+    /wiki/TITLE TITLE must be an entry (Done)
+    Views get content calling util function 
+        If entry doesn't exist show error message of not found (Done)
+        If exists render the content with apropiate TITLE (Done)
+
+Index page
+    user must be able to click an entry and be taken to the entry page
+
+Search
+    Entry a query
+        If query match an entry redirect to the corresponding page
+        If not take the user to a search result that shows the entries list (regex)
+    Click any entry should redirect to the corresponding page
+
+New page
+    Click the new page should take the user to entry creation
+    Enter title on a textarea
+    Button to save the new page
+        If entry already exists (title) show error message
+        If not saved the entry to disk and take he user to that new entry page
+
+ Edit page
+    Click a link to send the user to the page and edit the Markdown in a textarea
+    Textarea must have the information of the existing Markdown
+    Button ton save the changes
+    After saving redirect the user to the entry
+
+Random page
+    Send user to a random entry
+
+Markdown HTML conversion
+    Convert the markdown to HTML before being displayed to the user
+    Challenge: if comfortable convert the Markdown to HTML with no external libraries
