@@ -5,13 +5,13 @@ Entry page
         If exists render the content with apropiate TITLE (Done)
 
 Index page
-    user must be able to click an entry and be taken to the entry page
+    user must be able to click an entry and be taken to the entry page (Done)
 
 Search
     Entry a query
-        If query match an entry redirect to the corresponding page
-        If not take the user to a search result that shows the entries list (regex)
-    Click any entry should redirect to the corresponding page
+        If query match an entry redirect to the corresponding page (Done)
+        If not take the user to a search result that shows the entries list (regex) (Done)
+        Click any entry should redirect to the corresponding page (Done)
 
 New page
     Click the new page should take the user to entry creation
@@ -30,5 +30,5 @@ Random page
     Send user to a random entry
 
 Markdown HTML conversion
-    Convert the markdown to HTML before being displayed to the user
-    Challenge: if comfortable convert the Markdown to HTML with no external libraries
+    Convert the markdown to HTML before being displayed to the user (Done)
+    Challenge: if comfortable convert the Markdown to HTML with no external libraries (Not ready, for now pass)
