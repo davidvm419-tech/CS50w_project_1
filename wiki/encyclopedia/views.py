@@ -1,5 +1,4 @@
 from django import forms
-from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from . import util
 # Library to convert md to html
@@ -7,6 +6,8 @@ from markdown2 import Markdown
 markdowner = Markdown()
 # Regex to get matches on query
 import re
+
+from random import choice
 
 # Class to search query
 class SearchEntry(forms.Form):
@@ -59,3 +60,40 @@ def search_query(request):
             return render(request, "encyclopedia/index.html", {
                 "entries": util.list_entries()
             })
+        
+# Function to add a new entry
+        
+def newPage(request):
+    if request.method == "POST":
+        title = request.POST.get("title")
+        content = request.POST.get("content")
+        if util.get_entry(title):
+            return render(request, "encyclopedia/entryExists.html", {
+                "title": title
+            })
+        else:
+            util.save_entry(title, content)
+            return redirect("entry", title=title)
+    return render(request, "encyclopedia/newPage.html")
+
+
+# Function to edit an entry
+
+def editEntry(request, title):
+    content = util.get_entry(title)
+    if request.method == "POST":
+        udpated_content = request.POST.get("content_editing")
+        util.save_entry(title, udpated_content)
+        return redirect("entry", title=title)
+    return render(request, "encyclopedia/editEntry.html", {
+        "title": title,
+        "content": content,
+    })
+
+
+# Function to send the user to a random entry
+
+def randomEntry(request):
+    entry_list = util.list_entries()
+    random_title = choice(entry_list)
+    return redirect("entry", title=random_title)

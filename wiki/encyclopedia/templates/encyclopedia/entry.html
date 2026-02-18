@@ -8,4 +8,7 @@
     <div>
         <p>{{ content | safe }}</p>
     </div>
+    <div>
+        <a href="{% url 'editEntry' title %}">Edit Entry</a>
+    </div>
 {% endblock %}
