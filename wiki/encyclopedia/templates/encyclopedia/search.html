@@ -7,7 +7,7 @@
 {% block body %}
     <h1>Match results</h1>
 
-    <ul>
+    <ul class="list">
         {% for entry in entries %}
             <li><a href="{% url 'entry' entry %}">{{ entry }}</a></li>
         {% empty %}

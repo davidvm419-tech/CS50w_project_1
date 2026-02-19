@@ -8,16 +8,49 @@ code {
 }
 
 h1 {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 0px;
     padding-top: 20px;
 }
 
-.title {
-    height: 10vh !important;
-    width: 80% !important;
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    padding-top: 20px;
 }
-.content {
-    height: 30vh !important;
+
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: #93c1e9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.t_style {
+    border-radius: 10px !important;
+    height: 5vh !important;
+    width: 50% !important;
+}
+.c_style {
+    border-radius: 10px !important;
+    height: 50vh !important;
     width: 80% !important;
 }
 
@@ -26,17 +59,66 @@ h1 {
 }
 
 .search {
-    width: 100%;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     line-height: 15px;
+    margin-left: 12px;
+    width: 100%;
 }
 
 .sidebar {
-    background-color: #f0f0f0;
+    background-color: aliceblue;
+    border-radius: 15px;
     height: 100vh;
     padding: 20px;
 }
 
 .sidebar h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15px;
     margin-top: 5px;
+    padding-top: 20px;
+}
+
+#logo {
+    border-radius: 40px;
+    margin-left: 35px;
+    width: 100px;
+    height: 100px;
+}
+
+.list {
+    border: 1px solid #f0f8ff;
+    border-radius: 10px;
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+    width: 600px;
+    
+}
+
+.list li {
+    border-bottom: 1px solid #b9cfe2;
+    padding: 9px 10px;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+button {
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 150px;
+}
+
+button:hover {
+    border-radius: 20px;
+    background-color: #93c1e9;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 150px;
 }

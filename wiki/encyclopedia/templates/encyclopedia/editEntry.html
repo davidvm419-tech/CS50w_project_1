@@ -9,7 +9,7 @@
     <div>
         <form action="{% url 'editEntry' title %}" method="post">
             {% csrf_token %}
-            <h2>Contents</h2>
+            <h4>Content</h4>
             <textarea class="c_style" name="content_editing">{{ content | safe }}</textarea>
             <br>
             <button class="edition">Save Changes</button>
